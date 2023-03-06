@@ -7,8 +7,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+:root {
+    --second-bg-color: #181b21;
+    --bg-color: #181b21;
+    --main-theme-color: #0ef;
+}
+
 body {
     background: #1f242d;
+    color: #fff;
 }
 
 .header {
@@ -52,6 +60,7 @@ body {
     color: #0ef;
 }
 
+/* home page style */
 .home {
     position: relative;
     width: 100%;
@@ -95,13 +104,13 @@ body {
 }
 
 .home-content p {
-    font-size: 14px;
+    font-size: 18px;
     animation: slideRight 1s ease forwards;
     animation-delay: .2s;
 }
 
 .home-img img {
-    max-width: 500px;
+    max-width: 400px;
     margin-right: 100px;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 3s ease-in-out infinite;
@@ -148,6 +157,112 @@ body {
     animation: slideTop 1s ease forwards;
     animation-delay: 1s;
 }
+
+/* about-page sytle */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-top: 150px;
+}
+
+.about-img img {
+    max-width: 420px;
+}
+
+.heading {
+    font-size: 4.2rem;
+}
+
+.heading span {
+    color: #0ef;
+}
+
+.about-content {
+    margin: 0 130px 60px;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.3rem;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    margin: 2rem 0 3rem;
+}
+
+
+/* skills-page sytle */
+.skills {
+    margin-top: 4rem;
+}
+
+.skills h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 0 4rem;
+}
+
+.skills-container .skills-box {
+    flex: 1 1 25rem;
+    background: var(--second-bg-color);
+    padding: 3rem 1rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    /* border: .2rem solid #181b21; */
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.skills-box i {
+    font-size: 5rem;
+    color: var(--main-theme-color);
+}
+
+.skills-box h3 {
+    font-size: 1.5rem;
+    padding-top: .5rem;
+}
+
+.skills-container .skills-box:hover {
+    border-color: var(--main-theme-color);
+    transform: scale(1.02);
+}
+
+/* portfolio style */
+
+.portfolio {
+    margin-top: 4rem;
+}
+
+.portfolio-bix img {
+    max-width: 70px;
+}
+
+
+
+
+
+
+
+
+
 
 /* KEYFRAMES ANIMATION */ 
 @keyframes slideRight {
