@@ -245,18 +245,33 @@ body {
     transform: scale(1.02);
 }
 
+.skills-box a {
+    margin-top: .6rem;
+}
+
 /* portfolio style */
 
 .portfolio {
+    background: var(--second-bg-color);
     margin-top: 4rem;
 }
 
-.portfolio-bix img {
-    max-width: 70px;
+.portfolio-box img {
+    width: 100%;
 }
 
+.portfolio h2 {
+    margin-bottom: 2rem;
+}
 
-
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    /* grid-auto-rows: minmax(100px, auto); */
+    padding: 20px;
+}
 
 
 
